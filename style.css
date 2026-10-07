@@ -1,0 +1,365 @@
+@media (min-width: 991px) {
+  .abi {
+    padding-left: 80px;
+    gap: 20px;
+  }
+  
+}
+@media(max-width: 768px){
+    .pg1right{
+    display: none;
+  }
+  .pg1left{
+    width: 100%!important;
+  }
+}
+.pg1{
+  width: 100%;
+  height: fit-content;
+  background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(file:///C:/Users/KIRUTHIKA/OneDrive/Desktop/SUBLIME/HTML&CSS/Bootstrap/pg1-bg);
+  background-size: cover;
+}
+.pg1btn:hover{
+  background-color:  rgba(239, 35, 60, .95) !important;
+  color: white !important;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.pg2btn:hover{
+  background-color: white !important;
+  color: rgba(239, 35, 60, .95)  !important;
+}
+@media(max-width: 992px){
+  .pg2{
+    flex-direction: column!important;
+  }
+  .pg2right,.pg2left{
+    width: 100%!important;
+  }
+  .img-fluid{
+    width: 100%!important;
+  }
+}
+
+.pg3boximg{
+      width: 56%;
+    font-size: 50px;
+    border: 1px solid red;
+    align-content: center;
+    text-align: center;
+    color: red;
+}
+.pg3boxtext{
+      align-content: center;
+    padding: 10px 21px 10px 30px;
+
+}
+.pg3box1:hover .pg3boxtext{
+  background-color: red!important;
+  color: white!important;
+  transition: 0.5s;
+}
+
+.pg3box1:hover .pg3boximg{
+    font-size: 70px;
+    transition: 0.5s;
+  }
+
+@media(max-width: 991px){
+
+.pg3body{
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 0px!important;
+}
+.pg3box1{
+  width: 100%!important;
+}
+.pg3body2{
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 0px!important;
+  margin-top: 10px!important;
+}
+}
+.footer{
+  background-color:  rgba(239, 35, 60, .95) !important;
+  color: white !important;
+}
+.fa-caret-left{
+    font-size: xx-large;
+    position: absolute;
+    left: -24px;
+    top: 15%;
+    color: #d2d2d2;
+  }
+  .fa-caret-right{
+    font-size: xx-large;
+    position: absolute;
+    right: -30px;
+    top: 15%;
+    color: #d2d2d2;
+  }
+  .timeline:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 50%;
+    z-index: 0;
+    border: 2px solid;
+    color: red;
+}  
+.timelineleft:after{
+      content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 17%;
+    right: -14.5%;
+    background: #ffffff;
+    border: 2px solid #EF233C;
+    border-radius: 16px;
+    z-index: 1;
+  }
+  .timelineright:after{
+      content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 18%;
+    right: 108.3%;
+    background: #ffffff;
+    border: 2px solid #EF233C;
+    border-radius: 16px;
+    z-index: 1;
+  }
+  .circle:after{
+      content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 18%;
+    right: 109.8%;
+    background: #ffffff;
+    border: 2px solid #EF233C;
+    border-radius: 16px;
+    z-index: 1;
+  }
+
+  .timelinedateright{
+   position: absolute;
+    width: 100%;
+    top: 13%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #EF233C;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    text-align: left;
+    left: calc(100% + 16%);
+  }
+  .timelinedateleft{
+   position: absolute;
+    width: 100%;
+    top: 13.3%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #EF233C;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    text-align: right;
+    right: calc(100% + 16%);
+  }
+
+  .timelineright:hover .timelinedateleft{
+    transform: translate(-3%,5%);
+    transition: 0.5s;
+    font-size: x-large;
+  }
+
+   .timelineleft:hover .timelinedateright{
+    transform: translate(2%,3%);
+    transition: 0.5s;
+    font-size: x-large;
+  }
+  .arrowleft{
+    left: -31px;
+    display: none;
+  }
+
+  @media(max-width: 768px){
+
+    .timelineleft{
+      width: 90%!important;
+      border-left:7px solid #cfc9c9;!important;
+      border-right: 0px!important;
+    }
+    .timeline:before{
+      left: 2%;
+    }
+    .timelinedateright{
+      position: relative!important;
+      left: 0px!important;
+    }
+    
+    .timelinemainright{
+      width: 90%!important;
+      left: 8%!important;
+      margin-top: 10px!important;
+
+    }
+    .timelinedateleft{
+      position: relative!important;
+      right: 0px!important;
+      text-align: left!important;
+    }
+    .timelineright:after{
+      right: 105.2%!important;
+    }
+     .timelineleft:after{
+      left: -10.5%!important;
+    }
+    .arrowleft{
+      display: block;
+    }
+    .fa-caret-right{
+      display: none;
+    }
+  }
+
+.imgcont{
+      transform: translate(-1px, -43px);
+    background: white;
+    width: fit-content;
+    padding: 10px 10px;
+    box-shadow: 0px 6px 8px #dfe0df;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.portfoliobox:hover .portfolioimg{
+  transform: scale(1.1);
+  transition: 0.5s;
+
+}
+.portfoliobox:hover .portfoliobtn{
+  background-color: red;
+  color: white;
+}
+
+.portfoliorow{
+    gap: 13px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfoliorow2{
+    gap: 13px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfoliobox{
+  width: 30%;
+}
+
+@media(max-width: 991px){
+    .portfoliorow{
+    flex-direction: column;
+    align-content: center;
+  }
+  .portfoliorow2{
+    flex-direction: column;
+    align-content: center;
+  }
+  .portfoliobox{
+    width: stretch!important;
+  }
+  .imgbox{
+    width: auto!important;
+        padding: 20px 37px;
+  }
+  .portfolioimg{
+    width: stretch!important;
+  }
+  .imgcont{
+    padding: 20px 20px ;
+  }
+  .imgcont h4{
+    font-size: x-large!important;
+  }
+}
+
+input::placeholder{
+  color:white;
+}
+
+@media(max-width: 768px){
+  .contactcont{
+    flex-direction: column!important;
+  }
+  .contactbox1{
+    width: 100%!important;
+  }
+  .footerbox{
+    margin-top: 10px!important;
+    padding: 10px 10px!important;
+  }
+
+}
+.teambox:hover .teambox2{
+  background-color: red!important;
+  color: white!important;
+  transition: 0.5s;
+}
+.teambox:hover .teambox2 h4{
+  color: white!important;
+}
+.teambox:hover .teambox2 p{
+  color: white!important;
+}
+
+.teambox:hover .teambtn button{
+  background-color: red!important;
+  border: 1px solid white!important;
+  transition: 0.5s;
+}
+.teambox:hover .teamimg{
+  transform: scale(1.06)!important;
+  transition: 0.5s;
+}
+
+@media(max-width: 991px){
+
+  .teammainbox{
+    flex-direction: column;!important;
+  }
+  .teambox{
+    width: 100%!important;
+  }
+  .teambox2{
+    align-content: center!important;
+    justify-items: center!important;
+  }
+   .teambox2 p{
+    text-align: center!important;
+  }
+
+}
+@media(max-width: 768px){
+  .teambox{
+    flex-direction: column!important;
+  }
+  .teamimg{
+    width: 100%!important;
+  }
+}
+.myinput::placeholder{
+  color: black;
+}
